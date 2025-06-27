@@ -1,0 +1,439 @@
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'roboto', sans-serif;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #f5f5f5;
+    z-index: 9;
+  }
+  
+  .nav{
+    padding: 10px 10vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .brand-logo{
+    height: 60px;
+  }
+  
+  .nav-items{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .search{
+    width: 500px;
+    display: flex;
+  }
+  
+  .search-box{
+    width: 70%;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border: 1px solid #d1d1d1;
+    text-transform: capitalize;
+    background: none;
+    color: #a9a9a9;
+    outline: none;
+  
+  }
+  .tongthe {
+    width: 100%;
+  }
+  .search-btn{
+    width: 140px;
+    height: 40px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background: #383838;
+    color: #fff;
+    text-transform: capitalize;
+   
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-right: 100px;
+  }
+  
+  .search-box::placeholder{
+    color: #a9a9a9;
+  }
+  
+  .nav-items a{
+    margin-left: 30px;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Hide dropdown content by default */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    border-radius: 5px;
+    z-index: 1;
+    min-width: 160px;
+  }
+  
+  /* Dropdown content items */
+  .dropdown-content a {
+    color: black;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Hover effect for dropdown items */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show dropdown on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style for the image */
+  .dropdown img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .nav-items a img{
+    width: 25px;
+  }
+  .links-container{
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+    background: #f5f5f5
+  }
+  
+  .link{
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #383838;
+    opacity: 0.5;
+    transition: .5s;
+  }
+  
+  .link:hover{
+    opacity: 1;
+  }
+  .login-icon {
+    text-decoration: none;
+  }
+  .hero-section{
+    width: 100%;
+    height:url('../img/header.png') ;
+    background-image: url('../img/header.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-section .logo{
+    height: 700px;
+    display: block;
+    margin: auto;
+    width: 1520px;
+}
+
+.hero-section .sub-heading{
+    margin-top: -400px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 35px;
+    font-weight: 300;
+    margin-bottom: 360px;
+}
+
+
+/* Bố cục hai nửa */
+.account-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px; /* Khoảng cách giữa hai nửa */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Canh giữa toàn bộ phần nội dung */
+}
+
+/* Nửa bên trái: Thông tin tài khoản */
+.account-info {
+  flex: 1; /* Chiếm 50% không gian */
+  padding: 20px;
+  background-color: #fff; /* Nền trắng */
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.account-info h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  
+}
+
+.account-info p {
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Nửa bên phải: Form sửa thông tin */
+.edit-profile-user {
+  flex: 1; /* Chiếm 50% không gian */
+  padding: 20px;
+  background-color: #fff; /* Nền trắng */
+  border-radius: 8px; /* Bo góc */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+/* Thiết kế Form */
+.profile-user-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom:8px;
+  color: #555;
+  margin-left: 70px;
+}
+
+.profile-user-form input {
+  margin-left: 70px;
+  width: 400px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: #f9f9f9;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.profile-user-form input:focus {
+  border-bottom: 2px solid #333; /* Đổi màu viền khi focus */
+}
+
+.profile-user-form button {
+  margin-left: 70px;
+  width: 400px;
+  padding: 10px;
+  background-color: #333; /* Màu nút */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profile-user-form button:hover {
+  background-color: #555; /* Đổi màu khi hover */
+}
+
+/* Đảm bảo trang web hiển thị đẹp trên các thiết bị nhỏ hơn */
+@media (max-width: 768px) {
+  .account-section {
+      flex-direction: column;
+  }
+  .account-info,
+  .edit-profile-user {
+      flex: none;
+      width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'footer.css';
+footer{
+  position: relative;
+  width: 100%;
+  padding: 40px 10vw;
+  padding-bottom: 80px;
+  background: #383838;
+}
+
+.footer-content{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-content .logo{
+  height: 160px;
+}
+
+.footer-ul-container{
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.category{
+  width: 200px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  list-style: none;
+}
+
+.category-title{
+  grid-column: span 2;
+  text-transform: capitalize;
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.category .footer-link{
+  text-decoration: none;
+  text-transform: capitalize;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.footer-link:hover{
+  color: #fff;
+}
+.footer-title, .info{
+  color: rgba(255, 255, 255, 0.75);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.footer-title{
+  margin-top: 80px;
+  color: #fff;
+}
+
+.footer-social-container{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link{
+  color: #fff;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.social-link:nth-child(1){
+  margin-left: 0;
+}
+
+.footer-credit{
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+}
+.footer-title, .info{
+  color: rgba(255, 255, 255, 0.75);
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.footer-title{
+  margin-top: 80px;
+  color: #fff;
+}
+
+.footer-social-container{
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-link{
+  color: #fff;
+  margin-left: 20px;
+  text-transform: capitalize;
+}
+
+.social-link:nth-child(1){
+  margin-left: 0;
+}
+
+.footer-credit{
+  width: 100%;
+  padding: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+}
+.btn-profile, .btn-password {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #82878d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.btn-profile:hover, .btn-password:hover {
+  background-color: #474b4f;
+}
+select, input[type="text-area"] {
+  width: 200%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
